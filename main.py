@@ -10,9 +10,9 @@ import time
 import requests
 
 # 开启根据地区天气情况降低步数（默认关闭）
-open_get_weather = sys.argv[3]
+open_get_weather = "True"
 # 设置获取天气的地区（上面开启后必填）如：area = "上海"
-area = sys.argv[4]
+area = "上海"
 
 # 以下如果看不懂直接默认就行只需改上面
 
@@ -84,9 +84,9 @@ def getBeijinTime():
         print("获取北京时间失败")
         return
     if min_1 != 0 and max_1 != 0:
-        user_mi = sys.argv[1]
+        user_mi = "270971653@qq.com"
         # 登录密码
-        passwd_mi = sys.argv[2]
+        passwd_mi = "asdasd123456"
         user_list = user_mi.split('#')
         passwd_list = passwd_mi.split('#')
         if len(user_list) == len(passwd_list):
